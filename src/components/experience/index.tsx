@@ -66,7 +66,7 @@ export const Experience = () => {
   const [ screenshotVisibilities, setScreenshotVisibilities ] = useState({});
   
   return (
-    <div>
+    <div css={css`background-color: black`}>
       {ExperienceItems.filter(item => item.showcase).map((item, i) => (
         <section key={i} css={css`padding: 100px 0 100px 0;`}>
           <Container>

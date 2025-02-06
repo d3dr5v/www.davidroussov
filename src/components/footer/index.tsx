@@ -12,7 +12,7 @@ const phone: string = '0426267131';
 
 export const Footer = () => {
   return (
-    <footer className="pb-4 text-light" css={css`padding-top: 100px;`}>
+    <footer className="pb-4 text-light" css={css`padding-top: 100px; background-color: black`}>
       <div className="container">
         <div className="row mb-5">
           <div className="col-12">

@@ -2,8 +2,6 @@ import React from 'react';
 import { Global, css } from '@emotion/react';
 import Head from 'next/head';
 
-import 'bootstrap/dist/css/bootstrap.css';
-
 export const App = ({ Component, pageProps }) => {
   return (
     <React.Fragment>
@@ -16,7 +14,6 @@ export const App = ({ Component, pageProps }) => {
             background-color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #000;
             width: 100%;
           }
         `}

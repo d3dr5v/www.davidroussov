@@ -44,7 +44,7 @@ export const Languages = () => {
                 <div className="card card-sm card-body mb-5 flex-row align-items-center border-0">
                   <Python/>
                   <div className="ms-3">
-                    <h5 className="mb-0">Java</h5>
+                    <h5 className="mb-0">Python</h5>
                   </div>
                 </div>
               </div>
