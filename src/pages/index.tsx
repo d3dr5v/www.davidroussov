@@ -12,7 +12,7 @@ import {
   Languages,
 } from '@/components';
 
-const DevToggle = ({ onToggle }) => {
+const DevToggle = () => {
   return (
     <div css={css`position: absolute; z-index: 1; top: 0px; right: 0px;`}>
       <button
