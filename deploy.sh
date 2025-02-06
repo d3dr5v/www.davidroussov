@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-nix build
+npm run build
 
-AWS_PROFILE=davidroussov aws s3 sync ./result s3://davidroussov --acl public-read
+AWS_PROFILE=davidroussov aws s3 sync ./out s3://davidroussov --acl public-read
