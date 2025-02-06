@@ -37,3 +37,20 @@ next-env.d.ts
 
 # nix
 result
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore lock files
+*.lock.hcl
+```
+
+
+
+./aws/redirect.zip
+**/variables.tf
+
