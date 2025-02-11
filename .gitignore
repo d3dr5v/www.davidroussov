@@ -39,7 +39,7 @@ next-env.d.ts
 result
 
 # Local .terraform directories
-**/.terraform/*
+.terraform/*
 
 # .tfstate files
 *.tfstate
@@ -47,10 +47,3 @@ result
 
 # Ignore lock files
 *.lock.hcl
-```
-
-
-
-**/redirect.zip
-**/variables.tf
-

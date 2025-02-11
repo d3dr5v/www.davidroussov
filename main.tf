@@ -35,58 +35,6 @@ resource "aws_s3_bucket_acl" "website_bucket" {
   acl    = "public-read"
 }
 
-# Lambda
-
-resource "aws_iam_role" "lambda_role" {
-  name               = "lambda_edge_role"
-  assume_role_policy = <<EOF
-  {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Effect": "Allow",
-        "Principal": {
-          "Service": ["lambda.amazonaws.com", "edgelambda.amazonaws.com"]
-        },
-        "Action": "sts:AssumeRole"
-      }
-    ]
-  }
-  EOF
-}
-
-resource "aws_iam_role_policy" "lambda_policy" {
-  name = "lambda_policy"
-  role = aws_iam_role.lambda_role.id
-
-  policy = <<EOF
-  {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Effect": "Allow",
-        "Action": [
-          "logs:CreateLogGroup",
-          "logs:CreateLogStream",
-          "logs:PutLogEvents"
-        ],
-        "Resource": "arn:aws:logs:*:*:*"
-      }
-    ]
-  }
-  EOF
-}
-
-resource "aws_lambda_function" "redirect_lambda" {
-  filename         = "redirect.zip"
-  function_name    = "redirectLambda"
-  role             = aws_iam_role.lambda_role.arn
-  handler          = "index.handler"
-  runtime          = "nodejs18.x"
-  publish          = true
-  source_code_hash = filebase64sha256("redirect.zip")
-}
-
 # Cloudfront
 
 resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
@@ -132,7 +80,7 @@ resource "aws_cloudfront_distribution" "cdn" {
   }
 
   viewer_certificate {
-    acm_certificate_arn            = "arn:aws:acm:us-east-1:939972644928:certificate/7c8c0bcc-1e87-4ff3-a079-82337a7db07a"
+    acm_certificate_arn            = "arn:aws:acm:us-east-1:939972644928:certificate/ba89fca0-2b36-427b-9dbb-cacbf6aa6f60"
     ssl_support_method             = "sni-only"
     minimum_protocol_version       = "TLSv1.2_2019"
   }
