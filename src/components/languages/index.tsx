@@ -41,18 +41,18 @@ export const Languages = () => {
                 </div>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
-                <div className="card card-sm card-body mb-5 flex-row align-items-center border-0">
-                  <Python/>
+                <div className="card card-sm card-body flex-row align-items-center border-0">
+                  <Rust/>
                   <div className="ms-3">
-                    <h5 className="mb-0">Python</h5>
+                    <h5 className="mb-0">Rust</h5>
                   </div>
                 </div>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <div className="card card-sm card-body flex-row align-items-center border-0">
-                  <Rust/>
+                  <Python/>
                   <div className="ms-3">
-                    <h5 className="mb-0">Rust</h5>
+                    <h5 className="mb-0">Python</h5>
                   </div>
                 </div>
               </div>

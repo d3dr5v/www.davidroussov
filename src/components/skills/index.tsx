@@ -8,25 +8,30 @@ const Groups = {
   'Frontend': [
     'React',
     'Angular',
-    'Vue',
+    'Vue.js',
     'NextJS'
   ],
   'Backend': [
-    'Node',
-    'Serverless',
-    'Grails',
-    'Django'
+    'Node.js',
+    'Lambda',
+    'Grails'
+  ],
+  'ORM': [
+    'TypeORM',
+    'GORM',
   ],
   'Databases': [
-    'Postgres',
+    'PostgreSQL',
     'MySQL',
     'MongoDB'
   ],
   'DevOps/Cloud': [
     'AWS',
-    'Bitbucket Pipelines',
-    'CircleCI',
-    'Terraform'
+    'Docker',
+    'EC2, S3, Lambda, RDS',
+    'Bitbucket Pipelines, CircleCI',
+    'Terraform',
+    'ELK'
   ],
   'API': [ 'REST', 'GraphQL' ],
   'Integrations': [
@@ -34,8 +39,9 @@ const Groups = {
     'Xero',
     'OpenID',
     'Contentful',
-    'Fivetran',
     'Google Calendar',
+    'Google Maps',
+    'Mapbox',
   ],
 };
 

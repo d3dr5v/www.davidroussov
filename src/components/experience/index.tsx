@@ -19,7 +19,7 @@ const ExperienceItems = [
   {
     company: 'Up Family',
     industry: 'Construction',
-    year: 2017,
+    year: '2017 - Present',
     website: 'https://up-family.com.au',
     project: 'https://admin.up-family.com.au',
     showcase: true,
@@ -34,7 +34,7 @@ const ExperienceItems = [
   {
     company: 'AxisTech',
     industry: 'Agriculture',
-    year: 2020,
+    year: '2020 - 2023',
     website: 'https://axistech.co',
     project: 'https://my.axisstream.co',
     showcase: true,
@@ -48,7 +48,7 @@ const ExperienceItems = [
   {
     company: 'InTouchCare',
     industry: 'Telehealth',
-    year: 2021,
+    year: '2021',
     website: '',
     project: 'https://app.intouchcare.com.au',
     showcase: true,
