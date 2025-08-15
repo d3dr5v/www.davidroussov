@@ -28,7 +28,7 @@ export const Languages = () => {
 
                   <Typescript/>
                   <div className="ms-3">
-                    <h5 className="mb-0">TypeScript</h5>
+                    <h5 className="mb-0">TypeScript/JavaScript</h5>
                   </div>
                 </div>
               </div>
@@ -45,14 +45,6 @@ export const Languages = () => {
                   <Rust/>
                   <div className="ms-3">
                     <h5 className="mb-0">Rust</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
-                <div className="card card-sm card-body flex-row align-items-center border-0">
-                  <Python/>
-                  <div className="ms-3">
-                    <h5 className="mb-0">Python</h5>
                   </div>
                 </div>
               </div>

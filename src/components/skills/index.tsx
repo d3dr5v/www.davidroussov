@@ -5,44 +5,46 @@ import { css } from '@emotion/react';
 import { Container } from '@/components';
 
 const Groups = {
-  'Frontend': [
-    'React',
-    'Angular',
-    'Vue.js',
-    'NextJS'
+  "Frontend Frameworks": [
+    "React",
+    "Angular",
+    "Vue.js",
+    "Next.js",
+    "react-admin"
   ],
-  'Backend': [
-    'Node.js',
-    'Lambda',
-    'Grails'
+  "Backend Frameworks": [
+    "Node.js",
+    "Grails (Groovy)"
   ],
-  'ORM': [
-    'TypeORM',
-    'GORM',
+  "Cloud Services": [
+    "AWS (EC2, S3, Lambda, RDS, Elastic Beanstalk)",
+    "Docker",
+    "Terraform",
+    "ELK Stack"
   ],
-  'Databases': [
-    'PostgreSQL',
-    'MySQL',
-    'MongoDB'
+  "CI/CD Tools": [
+    "Bitbucket Pipelines",
+    "CircleCI"
   ],
-  'DevOps/Cloud': [
-    'AWS',
-    'Docker',
-    'EC2, S3, Lambda, RDS',
-    'Bitbucket Pipelines, CircleCI',
-    'Terraform',
-    'ELK'
+  "Databases": [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Redis"
   ],
-  'API': [ 'REST', 'GraphQL' ],
-  'Integrations': [
-    'Stripe',
-    'Xero',
-    'OpenID',
-    'Contentful',
-    'Google Calendar',
-    'Google Maps',
-    'Mapbox',
+  "API Technologies": [
+    "REST",
+    "GraphQL"
   ],
+  "Third-Party Integrations": [
+    "Stripe",
+    "Xero",
+    "OpenID",
+    "Contentful",
+    "Google Calendar API",
+    "Google Maps API",
+    "Mapbox"
+  ]
 };
 
 export const Skills = () => {

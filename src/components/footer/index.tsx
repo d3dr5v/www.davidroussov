@@ -31,7 +31,7 @@ export const Footer = () => {
               <li className="mb-3 d-flex">
                 <Phone/>
                 <div className="ms-2">
-                  <a href={`tel:+61{phone.slice(1)}`} className="text-white">
+                  <a href={`tel:+61${phone.slice(1)}`} className="text-white">
                     {phone}
                   </a>
                 </div>
